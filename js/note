@@ -1,0 +1,169 @@
+
+//counter
+
+(function($) {
+		"use strict";
+		function count($this){
+		var current = parseInt($this.html(), 10);
+		current = current + 1; /* Where 50 is increment */	
+		$this.html(++current);
+			if(current > $this.data('count')){
+				$this.html($this.data('count'));
+			} else {    
+				setTimeout(function(){count($this)}, 50);
+			}
+		}        	
+		$(".stat-count").each(function() {
+		  $(this).data('count', parseInt($(this).html(), 10));
+		  $(this).html('0');
+		  count($(this));
+		});
+   })(jQuery);
+
+
+//progress bar js
+
+$(document).ready(function ($) {
+    function animateElements() {
+        $('.progressbar').each(function () {
+            var elementPos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            var percent = $(this).find('.circle').attr('data-percent');
+            var animate = $(this).data('animate');
+            if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+                $(this).data('animate', true);
+                $(this).find('.circle').circleProgress({
+                    // startAngle: -Math.PI / 2,
+                    value: percent / 100,
+                    size : 400,
+                    thickness: 15,
+                    fill: {
+                        color: '#f47a14'
+                    }
+                }).on('circle-animation-progress', function (event, progress, stepValue) {
+                    $(this).find('strong').text((stepValue*100).toFixed(0) + "%");
+                }).stop();
+            }
+        });
+    }
+
+    animateElements();
+    $(window).scroll(animateElements);
+});
+
+//accordion
+
+$("#faq-accordion").accordion({
+collapsible : true,
+active : 0,
+heightStyle: "true",
+icons : {header:"ui-icon-plus", activeheader:"ui-icon-minus"}
+});
+
+//owl carouserl slider
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    
+    dots: true,
+    autoplay: true,
+    autoplayTimeout:2500,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+
+/*smoth scroling*/
+
+$(document).ready(function(){
+  $('.menu a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+});
+
+/*scroll to top*/
+$(document).ready(function(){
+$(window).scroll(function(){
+    if($(this).scrollTop() > 100) {
+        $("#arrow i").fadeIn();
+}
+    else {
+        $("#arrow i").fadeOut();
+}
+
+});
+$("#arrow i").on('click',function(){
+$("html,body").animate({
+    scrollTop: 0
+}, 600);
+    return false;
+});
+
+});
+
+//fixed header
+
+jQuery(window).scroll(function(){
+    if (jQuery(window).scrollTop() >= 10) {
+       jQuery('#home').addClass('fixed-header');
+    }
+    else {
+       jQuery('#home').removeClass('fixed-header');
+    }
+});
+
+// menu toggle 
+
+
+$(document).ready(function(){
+$(".menu-toggle").click(function(){
+$(".menu-toggle").toggleClass("tog-active");
+$(".menu").toggleClass("tog-active");
+});
+});
+
+// CHIRUZA CAROUSEL CODE
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
+    </script>
+    arial-label="Previous slide"

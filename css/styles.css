@@ -1,0 +1,821 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common classes */
+.clear{
+    clear: both;
+}
+
+#arrow i {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    cursor: pointer;
+    background-color: #f47a14;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+
+
+/* hedder */
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px #fff;
+}
+
+header{
+    z-index: 1;
+    position: relative;
+    padding-top: 20px;
+}
+
+.nav-col{
+    float: left;
+    width: 75%;
+}
+.ctn-info-call {
+    float: right;
+    text-align: right;
+    width: 25%;
+}
+
+.text-center{
+    text-align: center;
+}
+.image-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+
+.active {
+    color: #00A5BD!important;
+    font-weight: 200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito';
+    font-weight: 800;
+}
+h2{
+    font-family: 'Nunito-Light';
+    font-weight: 400; 
+}
+p {
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+.logo {
+    float: left;
+    width: 30%;
+}
+
+.menu {
+    margin-top: 38px;
+    float: left;
+    width: 70%;
+}
+.logo img{
+    width: 300px;
+    padding-top: 10px;
+}
+.menu a{
+    text-decoration: none;
+    padding: 22px;
+    display: inline block;
+    color: #4d4d4d;
+    transition: all 0.5s ease;
+}
+.menu a:hover{
+    color: #00A5BD;
+    font-weight: 815px;
+}
+.ctn-info-call a{
+    color:#353535 ;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.5s ease;
+}
+ctn-info-call a:hover{
+    color: #00A5BD;
+    transition: all 0.5s ease;
+}
+.ctn-info-call{
+    margin-top: 38px;
+    display: inline-block;
+}
+.separate-me{
+    padding-left: 15px;
+}
+.header-col1{
+    float: left;
+    width:35%;
+    position: absolute;
+    top: 30%;
+    left:11%
+}
+.header-col2{
+    background-image: url(../images/header-bg.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 75%;
+    float: right;
+}
+.header-col1 p button{
+ position: absolute;
+}
+
+
+
+
+/* Section */
+section.header-bg-parent {
+    position: relative;
+    top: -115px;
+}
+/* section.header-bg-parent:after {
+     content: "invest";
+     position: absolute;
+} */
+
+
+
+
+
+.typewrite{
+    font-family: 'Nunito';
+    font-weight: 800; 
+    font-size: 60px;
+    color: #00A5BD!important;
+}
+.centre-culturel{
+    font-family: 'Nunito';
+    font-weight: 800; 
+    font-size: 60px;
+    color: #00A5BD!important;
+    line-height: 43px;
+}
+.hello-word{
+    padding-bottom: 10px;
+    padding-left:5px ;
+}
+.header-col2 h2{
+    color: #00A5BD!important;
+    font-size: 60px;
+    line-height: 43px;
+    margin: 21px 0px 50px;
+}
+.header-col2 p{
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 25px;
+    margin: 20px 0px 0px;
+}
+button.common-btn{
+    Background: linear-gradient(90deg,  #00A5BD, #1e99b4  );
+    padding: 15px 45px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Nunito';
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 20px 0px;
+}
+button.common-btn:hover{
+    Background: linear-gradient(180deg,  #267f8d, #00d0ff  );
+}
+
+
+.header-bg-par-img{
+    position: absolute;
+    bottom:-100px;
+}
+
+/* common-H5  and common-h2*/
+.text-center{
+    margin-top: 2%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.common-h5{
+    color:#267f8d;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom:19px;
+    margin-top: 1%;
+}
+h5.ccommon-h5-h4{
+    margin-top:50px;
+}
+.common-h2{
+    color: #3b3663;
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 1000;
+    font-family: 'Nunito';
+}
+
+/* // features col*/
+.feature-col-par{
+    background-color:#fcfcfc;
+    padding: 50px 0px;
+    margin-top:50px;
+    margin-bottom: 20px;
+}
+.feature-col {
+    background-color: #fff;
+    padding: 30px;
+    width: 23%;
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
+    box-shadow: 2px 2px 10px #fefefe;
+    border-radius: 13px;
+    transition: all 0.5s ease;
+    height: 265px;
+}
+.feature-col:hover{
+    background-color:#3b3636;
+}
+.feature-col:hover h3{
+     color:#fff;
+}
+.feature-col:hover h4{
+    color:#fff;
+}
+.feature-col h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.feature-col img {
+    width: 80px;
+    height: 80px;
+    margin: 30px 0px;
+}
+.feature-col h4 {
+    font-size: 14px;
+    font-family: 'Nunito-Light', sans-serif;
+    color: #4d4d4d;
+    margin-bottom: 20px;
+}
+
+/* why choose us */
+.why-choose-col {
+    float: left;
+    width: 50%;
+    padding-top: 100px;
+}
+.count-col {
+    float: right;
+    width: 50%;
+}
+.stat {
+    float: left;
+    width: 30%;
+}
+.stat-info-par {
+    float: right;
+    width: 70%;
+}
+.why-choose-col p {
+    color: #696687;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Rubik";
+    font-weight: 400;
+    padding: 13px 100px 0px 0px;
+}
+
+/* grounder */
+.milestone-counter {
+    margin: 25px;
+}
+.stat-info-div p {
+    color: #3B3663;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Rubik";
+    padding: 20px 0px;
+}
+.stat-info-sub-par {
+    margin: 50px 0px 40px;
+}
+.stat-info-div{
+    position: relative;
+}
+
+.highlight {
+    color: #3b3663;
+    padding-top: 20px;
+    font-family: "Nunito";
+    font-weight: 800;
+    font-size: 56px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+.highlight:after{
+   content: "+";
+   color:#f47a14;
+   position: absolute;
+   top: 10px;
+   right:30px;
+   font-size:30px;
+}
+.stat-info-div:before{
+    content: "s";
+    border-left: 1px solid #ddd;
+    position: absolute;
+    height: 85px;
+    font-size: 0;
+    left: -14px;
+}
+.cyrus{
+    margin-top: 60px;
+}
+
+/* circles */
+.circle {
+    width: 200px;
+    margin: 6px 6px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+}
+.circle canvas {
+    vertical-align: top;
+    width: 120px !important;
+}
+.circle strong {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    color: black;
+}
+.circle strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+.circle span {
+    display: block;
+    color: #aaa;
+    margin-top: 12px;
+}
+
+.progress-bar-col {
+    float: left;
+    width: 30%;
+}
+
+.progress-info-col {
+    float: right;
+    width: 70%;
+    /* padding-right: 15px; */
+}
+.progress-info{
+    margin: 20px 0px 60px;
+}
+.progress-info h3{
+    color: #f47a14 ;
+    font-family: "Nunito-Bold";
+    font-weight:bolder;
+}
+.progress-info p {
+    color: #696687;
+    font-size: 16px;
+    font-family: "Rubik";
+    line-height: 24px;
+    padding-top: 10px;
+}
+.progress-info {
+    margin: 30px 0px 60px;
+}
+
+.expand-img-col {
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.expand-img-info-col {
+    float: right;
+    width: 50%;
+    margin-top: 100px;
+}
+
+.expand-img {
+    position: relative;
+}
+.expand-img-info {
+    position: absolute;
+    top: 70px;
+    left: 180px;
+    color: #ffff;
+}
+.expand-img-info i {
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+.expand-img-info h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Nunito-Bold";
+    line-height: 35px;
+}
+
+/*faq*/
+.chris-bhv{
+    margin: 50px;
+}
+
+.faq-que-col {
+    float: left;
+    width: 47%;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+.faq-bg-col {
+    float: right;
+    width: 50%;
+}
+.ui-accordion-header-active {
+    background-image: linear-gradient(20deg, #ff841f 0%, #ff9721 57%) !important;
+    border: none !important;
+    outline: none !important;
+}
+div#faq-accordion{
+    margin-top:40px;
+}
+.faq-img-par {
+    position: relative;
+}
+.faq-img-info {
+    position: absolute;
+    top: 140px;
+    left: 80px;
+    color: #fff;
+}
+.faq-img-info h2 {
+    font-size: 40px;
+    font-family: "Nunito";
+    font-weight: 800;
+    line-height: 45px;
+}
+
+.faq-img-info .fa-lightbulb-o {
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+
+.faq-img-info p {
+    font-size: 18px;
+    font-family: "Rubik";
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.carousel{
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+}
+section#project {
+    position: relative;
+    margin-top: 100px;
+}
+#project:before {
+    content: url(../images/portfolio/portfolio-color-bg.png);
+    position: absolute;
+    top: -8%;
+    left: 7%;
+}
+/* #price-table{
+    background-color: red;
+    padding: 100px 120px;
+    margin-top: 200px;
+} */
+.price-t{
+    background-color:#fcfcfc;
+    padding: 100px 120px;
+    margin-top: 200px; 
+}
+.basic-price-col {
+    float: left;
+    width: 30%;
+    background-color: #fff;
+    margin-left: 3%;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.basic-price-info h4 {
+    color: #3b3663;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.price p {
+    color: #f47a14;
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 40px;
+    margin: 20px 0px;
+}
+.price-list ul {
+    list-style: none;
+}
+.price-list ul li {
+    color: #696687;
+    font-family: "Rubik";
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.price-list ul li:hover {
+    color: #f47a14;
+}
+button.price-btn {
+    border: none;
+    color: #fff;
+    padding: 13px 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(20deg, #ff841f 0%, #ff9721 57%) !important;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+button.price-btn:hover {
+    background-image: linear-gradient(20deg, #ff9721 0%, #ff841f 57%) !important;
+}
+.rec-price {
+    background-color: #3b3564;
+}
+.rec-price h4 {
+    color: #fff;
+}
+
+.rec-price ul li {
+    color: #fff;
+}
+
+.rec-price p {
+    color: #fff;
+}
+
+/*blog css*/
+
+.blog-col {
+    float: left;
+    width: 30%;
+    margin-left: 3%;
+    margin-top: 45px;
+    overflow: hidden;
+}
+.blog-col span {
+    color: #696687;
+    font-size: 14px;
+    font-family: "Nunito";
+    font-weight: 400;
+    padding: 20px 0px 6px 0px;
+    display: inline-block;
+}
+.blog-col h3 {
+    color: #696687;
+    font-size: 19px;
+    font-family: "Nunito";
+    font-weight: 800;
+}
+
+.blog-col a {
+    color: #ff881f;
+    font-size: 13px;
+    font-family: "Rubik";
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.blog-col a {
+    color: #ff881f;
+    font-size: 13px;
+    font-family: "Rubik";
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 25px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.blog-col a:after {
+    content: "\f178";
+    font-family: "FontAwesome";
+    margin-left: -14px;
+    padding-left: 12px;
+    transition: all 0.5s ease;
+    visibility: hidden;
+}
+.blog-col a:hover:after {
+    visibility: visible;
+    margin-left: 14px;
+}
+section#blog {
+    margin: 80px 0px;
+}
+.blog-col img {
+    border-radius: 5px;
+    transition: all 0.5s ease-in;
+}
+.blog-col img:hover {
+    transform: scale(1.1,1.1);
+ }
+ 
+ /*contact*/
+
+#contact {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/homecontact-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0px;
+}
+
+.form-par {
+    background-image: linear-gradient(20deg, #ff841f 0%, #ff9721 57%);
+    padding: 30px 40px;
+    width: 50%;
+    margin: 0 auto;
+}
+.form-com {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    outline:none!important;
+    border-radius: 5px;
+}
+.form-par h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "Nunito";
+    margin-bottom: 25px;
+}
+input.submit-btn {
+    color: #fff;
+    border: none;
+    background-image: linear-gradient(180deg, #059DDE 0%, #d5ddff 100%);
+    padding: 14px 40px;
+    margin: 15px auto 0px;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+input.submit-btn:hover {
+    border: 5px;
+    background-image: linear-gradient(180deg, #e1f6ff 0%, #00fdd3 100%);
+}
+
+.footer-col {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    margin-top: 45px;
+}
+
+.footer-2-col {
+    position: relative;
+    left: 110px;
+}
+.footer-col h3 {
+    color: #3b3663;
+    font-family: "Nunito";
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    color: #696687;
+    font-size: 16px;
+    font-family: "Rubik";
+    font-weight: 400;
+    /* line-height: 15px; */
+}
+/* .footer-col i {
+    color: #fff;
+    background-color: #ff881f;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+     line-height: 40px; 
+    text-align: center;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}  */
+
+.social-icons-footer i:hover {
+    transform: translateY(-10px)
+}
+
+.footer-col.footer-2-col ul li {
+    color: #696687;
+    font-family: "Rubik";
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.footer-col.footer-2-col ul li:hover {
+    padding-left: 5px;
+}
+
+.footer-col.footer-2-col ul  {
+    list-style: none;
+}
+.footer-col a {
+    color: #696687;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.footer-col span {
+    padding-left: 10px;
+}p.copyright-footer {
+    text-align: center;
+    font-family: "Rubik";
+    padding: 20px 0px;
+}
+
+hr.footer-hr {
+    margin: 60px 0px 20px;
+}
+
+
+
+
+
+@font-face {
+    font-family: "Nunito";
+    src: url(../polices/Nunito-Regular.ttf);
+}
+@font-face {
+    font-family: "Nunito-Bold";
+    src: url(../polices/Nunito-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Nunito-Light";
+    src: url(../polices/Rubik-Light.ttf);
+}
