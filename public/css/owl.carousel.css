@@ -160,7 +160,7 @@
   background: url("owl.video.play.png") no-repeat;
   cursor: pointer;
   z-index: 1;
-  -webkit-backface-visibility: hidden;
+  --webkit-backface-visibility: hidden;
   transition: transform 100ms ease; }
 
 .owl-carousel .owl-video-play-icon:hover {

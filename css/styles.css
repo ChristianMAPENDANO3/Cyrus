@@ -44,6 +44,7 @@ header{
 .nav-col{
     float: left;
     width: 75%;
+    /* background-color: red; */
 }
 .ctn-info-call {
     float: right;
@@ -64,6 +65,25 @@ header{
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+@media(max-width: 670px){
+    
+    .container{
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+    }
+    #home{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .nav-col{
+        position: relative;
+        width: 100%;
+        display: block;
+    }
 }
 
 a {
