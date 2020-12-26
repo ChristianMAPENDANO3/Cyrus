@@ -67,24 +67,6 @@ header{
     padding-right: 15px;
 }
 
-@media(max-width: 670px){
-    
-    .container{
-        display: block;
-        padding: 0;
-        margin: 0 auto;
-    }
-    #home{
-        position: relative;
-        display: block;
-        width: 100%;
-    }
-    .nav-col{
-        position: relative;
-        width: 100%;
-        display: block;
-    }
-}
 
 a {
     font-family: 'Rubik';
@@ -185,6 +167,7 @@ section.header-bg-parent {
     position: relative;
     top: -115px;
 }
+
 /* section.header-bg-parent:after {
      content: "invest";
      position: absolute;
@@ -839,3 +822,272 @@ hr.footer-hr {
     font-family: "Nunito-Light";
     src: url(../polices/Rubik-Light.ttf);
 }
+
+
+/* Jean-pierre14 */
+
+.hamburer{
+    position: relative;
+    display: block;
+    float: right;
+    margin: 10px;
+    display: none;
+}
+
+@media(max-width: 670px){
+    *{
+        position: relative;
+    }
+    .hamburer{
+        position: fixed;
+        top: 0;
+        margin: 0;
+        /* margin-left: 500px; */
+        width: 50px;
+        height: 50px;
+        display: block;
+        outline: none !important;
+        /* background: red; */
+    }
+    .button{
+        /* position: absolute; */
+        background-color: transparent;
+        outline: none;
+        border: none !important;
+        outline: none !important;
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px 10px 10px 19px;
+        /* border: 1px solid #000; */
+    }
+    
+    .hidden-sm{
+        display: none;
+    }
+    .clear, .separate-me{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+    }
+    header{
+        position: relative;
+        /* background: red; */
+        background-color: rgb(228, 228, 228);
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        z-index: 9;
+        /* justify-content: center;
+        align-items: center;
+        align-content: center; */
+    }
+    header .container{
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    header .logo{
+        position: relative;
+        display: block;
+        width: 200px;
+        margin: 0 0 0 50px;
+        padding: 0;
+    }
+    header .logo img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        width: 200px;
+        height: 50px;
+        object-fit: cover;
+    }
+    header .container .menu{
+        position: fixed;
+        display: block;
+        z-index: 9999;
+        top: 13px;
+        display: none;
+        /* left: -250px; */
+        width: 250px;
+        height: 100%;
+        background-color: rgba(0,0,0,0.9);
+    }
+
+    header .container .menu a{
+        display: block;
+        width: 100%;
+        color: #FFF;
+        border-bottom: 1px solid rgba(255,255,255,0.1) 
+    }
+
+    .hidden-lg{
+        display: block;
+    }
+
+    .header-bg-parent{
+        top: 50px;
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .header-col1{
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .hello-word{
+        padding-top: 150px;
+    }
+    .header-col1 p{
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0 20px 0 0;
+        text-align: center;
+    }
+    .header-col2{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .feature-col-par{
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .feature-col-par .container{
+        position: relative;
+        display: block;
+    }
+    .feature-col-par .container .feature-col{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .feature-col-par .container .feature-col .images-responsive{
+        position: absolute;
+        left: 35%;
+        width: 100px;
+        /* background: red; */
+    }
+    .cyrus{
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .cyrus .container{
+        position: relative;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .cyrus .container .why-choose-col{
+        position: relative;
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
+    .cyrus .container .why-choose-col p{
+        position: relative;
+        display: block;
+        font-family: calibri !important;
+        width: 100%;
+        text-align: left;
+    }  
+    .cyrus .container .count-col{
+        position: relative;
+        /* background: red; */
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    .stat-count{
+        font-size: 30px;
+        /* padding: 20px; */
+    }
+    .cyrus .container .count-col .stat{
+        position: relative;
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .cyrus .container .count-col .count-sub-col .milestone-counter{
+        position: relative;
+        /* background: red; */
+
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .cyrus .container .count-col .stat .stat-info-par{
+        display: flex;
+        justify-content: center;
+        font-family: calibri !important;
+    }
+    .cyrus .container .count-col .stat .stat-info-par span{
+        color: #00A5BD;
+    }
+
+    .cyrus .Why-choose-us{
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    section{
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .cyrus .Why-choose-us .why-choose-col{
+        position: relative;
+        display: block;
+
+        width: 100%;
+    }
+    .py{
+        margin: 40px 0;
+    }
+    .expand-img-info-col ,.expand-img-col{
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media(min-width: 670px){
+    .hidden-lg{
+        display: none;
+    }
+    .hidden-sm{
+        display: block;
+    }
+}
+
+/* Jean-pierre14 */
