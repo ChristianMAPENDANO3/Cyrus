@@ -353,7 +353,8 @@
         display: block;
     }
 
-    .basic-price-col, .price-t {
+    .basic-price-col,
+    .price-t {
         position: relative;
         width: 100%;
         display: block;

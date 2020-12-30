@@ -525,7 +525,7 @@ h5.ccommon-h5-h4 {
 }
 
 @media(max-width: 650px) {
-    .expand-img-info-col{
+    .expand-img-info-col {
         position: relative;
         display: flex;
         flex-wrap: wrap;
@@ -645,6 +645,7 @@ section#project {
     margin-top: 200px;
 } */
 .price-t {
+    position: relative;
     background-color: #fcfcfc;
     padding: 100px 120px;
     margin-top: 200px;
@@ -660,6 +661,7 @@ section#project {
     border-radius: 20px;
     margin-top: 40px;
 }
+
 
 .basic-price-info h4 {
     color: #3b3663;
@@ -785,6 +787,12 @@ button.price-btn:hover {
 .blog-col a:hover:after {
     visibility: visible;
     margin-left: 14px;
+}
+
+section {
+    position: relative;
+    display: block;
+    width: 100%;
 }
 
 section#blog {
@@ -935,8 +943,37 @@ hr.footer-hr {
 }
 
 
+.box-card {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
 
+.bg-card {
+    position: relative;
+    background-color: #00A5BD;
+}
 
+.box-card .button-card {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #91013d;
+    border-radius: 4px;
+}
 
 @font-face {
     font-family: "Nunito";
