@@ -962,6 +962,13 @@ hr.footer-hr {
     background-color: #00A5BD;
 }
 
+.box-white {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9721;
+}
+
 .box-card .button-card {
     position: relative;
     display: inline-block;
